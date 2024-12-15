@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Form</title>
+</head>
+<body>
+    
+     <form action="text" id="form">
+            <img src="vametech2.png" alt="Vametech Logo">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Enter your username"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" placeholder="Enter your email"><br>
+            <label for="password">password</label><br>
+            <input type="text" id="password" placeholder="Enter your password"><br>
+            <input type="submit" value="Sign up"><br>
+            <div class="register">
+                <a href="#">Already have an account? log in here</a>
+                
+             </div>
+        </form>
+    
+    
+    <script>
+        const form = document.getElementById("form");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault()
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            console.log("username" + username);
+            console.log("email" + email);
+            console.log("password" + password);
+            alert("your details have been recived"
+                
+            );
+            
+        });
+    </script>
+</body>
+</html>
